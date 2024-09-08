@@ -1,12 +1,9 @@
 #ansible all -m gather_facts : collecte les informations sur les hosts dans l'inventory
 #ansile all --list-hosts : affiche la liste des hosts dans l'inventory
-    1  pwd
-    2  ls
-    3  ls -a
-    4  ls .lesshst 
-    5  cat .lesshst 
+
+   
     6  ansible --version
-    7  exit
+   
     8  ansible -v
     9  ansible --version
    10  ansible --version 
