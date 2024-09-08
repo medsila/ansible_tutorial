@@ -1,0 +1,216 @@
+#ansible all -m gather_facts : collecte les informations sur les hosts dans l'inventory
+#ansile all --list-hosts : affiche la liste des hosts dans l'inventory
+    1  pwd
+    2  ls
+    3  ls -a
+    4  ls .lesshst 
+    5  cat .lesshst 
+    6  ansible --version
+    7  exit
+    8  ansible -v
+    9  ansible --version
+   10  ansible --version 
+   11  ssh medsila@192.168.1.180
+   12  ls .ssh/authorized_keys 
+   13  cat .ssh/authorized_keys 
+   14  ls /etc/ssh/
+   15  cd /etc/ssh/
+   16  ls
+   17  ll
+   18  ls -a
+   19  rm -f ssh_host_*
+   20  sudo su
+   21  su -u
+   22  su 
+   23  cd ..
+   24  pwd
+   25  exit
+   26  ansible 
+   27  ip a
+   28  ssh-keygen -t ed25512 -C "medsila default"
+   29  ssh-keygen -t ed25519 -C "medsila default"
+   30  ls -la .ssh/
+   31  cat .ssh/id_ed25519.pub 
+   32  cat .ssh/id_ed25519
+   33  ssh-copy-id -i ~/.ssh/id_ed25519.pub 192.168.1.173
+   34  ssh 192.168.1.173
+   35  ssh-keygen -t ed25519 -C "ansible"
+   36  ls 
+   37  pwd
+   38  ls -la .ssh/
+   39   
+   40  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.1.173
+   41  pwd
+   42  cd .ssh/authorized_keys 
+   43  cat .ssh/authorized_keys 
+   44  ssh 192.168.1.173
+   45  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.1.180 "ansible"
+   46  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.1.180 -C "ansible"
+   47  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.1.180
+   48  ssh 192.168.1.180
+   49  ssh-copy-id -i ~/.ssh/ansible.pub 192.168.1.180
+   50  ssh-copy-id -if ~/.ssh/ansible.pub 192.168.1.180
+   51  ssh-copy-id -f ~/.ssh/ansible.pub 192.168.1.180
+   52  ssh-copy-id -f -i ~/.ssh/ansible.pub 192.168.1.180
+   53  ssh 192.168.1.180
+   54  ssh -i ~/.ssh/ansible 192.168.1.180
+   55  echo $SSH_AGENT_SOCK
+   56  vi /etc/ssh/ssh_config
+   57  ssh 192.168.1.180
+   58  ssh -v 192.168.1.180
+   59  ssh -i ~/.ssh/ansible 192.168.1.180
+   60  ssh -v -i ~/.ssh/ansible 192.168.1.180
+   61  which git
+   62  git
+   63  cat .ssh/id_ed25519.pub 
+   64  git clone git@github.com:medsila/ansible_tutorial.git
+   65  ls
+   66  cd ansible_tutorial/
+   67  ls
+   68  cat ansible.cfg 
+   69  cat README.md 
+   70  exit
+   71  ls
+   72  pwd
+   73  w
+   74  ls
+   75  cd Ansible2024/
+   76  ls
+   77  cd ..
+   78  ls
+   79  ssh git@github.com:medsila/Ansible2024.git
+   80  git clone git@github.com:medsila/Ansible2024.git
+   81  ls
+   82  cd Ansible2024/
+   83  ls
+   84  git status
+   85  git
+   86  git show
+   87  ansible -version
+   88  ansible --version
+   89  ls
+   90  nano
+   91  vi inventory
+   92  git status
+   93  git add inventory " first version of inventory file with three hosts"
+   94  git commit inventory 
+   95  git add inventory " first version of inventory file with three hosts"
+   96  git add inventory
+   97  commit inventory -m "first version of inventory file with three hosts"
+   98  git commit inventory -m "first version of inventory file with three hosts"
+   99  git status
+  100  git push origin main
+  101  ls
+  102  cat inventory 
+  103  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  104  ansible all --key-file ~/.ssh/ansible.pub -i inventory -m ping
+  105  nano inventory 
+  106  vi inventory 
+  107  git status
+  108  git add inventory 
+  109  git status
+  110  git commit inventory 
+  111  git commit 
+  112  git commit -m 
+  113  git commit -m "first version without comment"
+  114  git push main 
+  115  git push oringin main
+  116  git push origin main
+  117  ansible all --key-fle ~/.ssh/ansible -i  inventory -m ping
+  118  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  119  cd .;
+  120  cd ..
+  121  ls
+  122  exit
+  123  w
+  124  ssh 192.168.1.173
+  125  ssh-copy-id -i ~/.ssh/ansible 192.168.1.160 
+  126  ssh 192.168.1.160
+  127  ssh -i .ssh/ansible 192.168.1.160
+  128  git status
+  129  git clone git@github.com:medsila/Ansible2024.git
+  130  ls
+  131  cd Ansible2024/
+  132  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  133  cat /etc/passwd
+  134  ssh -i ~/.ssh/ansible 192.168.1.173
+  135  ssh -i ~/.ssh/ansible 192.168.1.160
+  136  ssh -i ~/.ssh/ansible 192.168.1.180
+  137  ls -la ~/.ssh/ansible
+  138  chmod 600 ~/.ssh/ansible
+  139  ls -la ~/.ssh/ansible
+  140  ssh -i ~/.ssh/ansible devops@192.168.1.160
+  141  vi inventory 
+  142  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  143  search devops
+  144  cat /etc/passwd
+  145  cat /etc/passwd | grep devops
+  146  su
+  147  ping 192.168.1.173
+  148  cd /etc/ansible/
+  149  ls
+  150  ll
+  151  cat ansible.cfg 
+  152  cat hosts 
+  153  echo $ANSIBLE_USER
+  154  LS
+  155  ls
+  156  cd ..
+  157  ls
+  158  cd ..
+  159  pw
+  160  pwd
+  161  ansible 
+  162  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  163  ls
+  164  cd /home/medsila/
+  165  ls
+  166  cd Ansible2024/
+  167  ls
+  168  cat inventory 
+  169  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  170  reboot
+  171  su reboot
+  172  sudo reboot
+  173  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  174  ls
+  175  cd Ansible2024/
+  176  ansible all --key-file ~/.ssh/ansible -i inventory -m ping
+  177  yum update
+  178  sudo yum update -y
+  179  su 
+  180  ansible all -m ping
+  181  ls
+  182  cat ansible.cfg 
+  183  cat inventory 
+  184  ansible all -m ping
+  185  git add ansible.cfg 
+  186  git status
+  187  git commit -m 'update config"
+  188  git commit -m "update config"
+  189  git push origin main
+  190  ansible all -m ping
+  191  ls
+  192  cat inventory 
+  193  vi inventory 
+  194  git add inventory 
+  195  git commit "update inventory"
+  196  git commit "update "
+  197  git commit "first version without comment"
+  198  git commit -m "first version without comment"
+  199  git push origin main
+  200  ansible all -m ping
+  201  ansible --list-hosts
+  202  ansible all --list-hosts
+  203  cat inventory 
+  204  ansible all --list-hosts
+  205  cd ..
+  206  ls
+  207  cd ansible_tutorial/
+  208  ansible all --list-hosts
+  209  ansible all -m gather_fact
+  210  ansible all -m gather_facts
+  211  vi cmd_ansible.txt
+  212  ansible all -m gather_facts --limit 192.168.1.173
+  213  history
+  214  history >> cmd_ansible.txt 
